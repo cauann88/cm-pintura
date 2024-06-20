@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family:'inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1 px;
+}
+
+#logo{
+    display: flex;
+    height: 170px;
+    width: 250px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#butoes{
+    display: flex;
+    border-radius: 4px;
+    justify-content: center; 
+    height: 35px;   
+}   
+#ama{
+background-color: yellow;
+border-radius: 15%;
+width: 70px;
+}
+
+#azul{
+    background-color: blue;
+    border-radius: 15%;
+    width: 70px;
+}
+
+#are{
+background-color:#e1d2c3;
+border-radius: 15%;
+width: 70px;
+}
+#ver{
+    background-color: #228b22;
+    border-radius: 15%;
+    width: 70px;
+}
+
+#bg{
+    background-color: #fffafa;
+    border-radius: 15%;
+    width: 70px;
+}
+
+#lar{
+    background-color: orange;
+    border-radius: 15%;
+    width: 70px;
+}
+
+#pd{
+    background-color: white;
+    border-radius: 15%;
+    width: 70px;
+}
+#butoes:hover{
+    cursor: pointer;
+}
+#ama:hover{
+    scale: 1.05;
+}
+#azul:hover{
+    scale: 1.05;
+}
+#are:hover{
+    scale: 1.05;
+}
+#ver:hover{
+    scale: 1.05;
+}
+#pd:hover{
+    scale: 1.05;
+}
+#lar:hover{
+    scale: 1.05;
+}
+#bg:hover{
+    scale: 1.05;
+}
+section{
+    display: flex;
+    justify-content:center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+a:hover{
+    color: #fff;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    height: 10%;
+    background-color:orange ;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+
+}
+.navbar .toggle_btn{
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color:#000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color:#fff;
+}
+.action_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: heigth 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section#hero{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+@media(max-width:992px){
+    .navbar .link,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+@media(max-width:720px){
+    .dropdown_menu{
+        left:2rem;
+        width: unset;
+    }
+}
+:root{
+    --color-neutral-0: #0e0e0e;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+#footer_content{
+    background-color:var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1{
+    margin-bottom:0.75rem ;
+}
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background-color: #4267b3;
+}
+#whatsapp{
+    background-color: #25d366;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: var(--color-neutral-40);
+}
+.footer-list.footer-link{
+    color: var(--color-neutral-40);  
+}
+.footer-list.footer-link:hover{
+    color:(#7f37c9) ;
+}
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+}
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+#input_group input{
+    all:unset;
+    padding: 0.75rem;
+    width: 100%;
+
+}
+#input_group button{
+    background-color: orange;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#input_group button:hover{
+    opacity: 0.8;
+}
+#footer_copyrigth{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+@media screen and (max-width: 760px) {
+    #footer_content{
+        grid-template-columns: repeat(2, 1 fr);
+        gap: 2rem;
+        padding: auto;
+    }
+}
+@media (max-width:780px){
+  function{padding: 20px;
+  }
+}
+@media(max-width:992px){
+    .navbar .link,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+@media(max-width:720px){
+    .dropdown_menu{
+        left:2rem;
+        width: unset;
+    }
+}
+@media screen and (max-width:720px) {
+    #cor{
+        padding: auto;
+    }
+}
+@media(max-width:768px){
+    form{
+        padding: 10px;
+    }
+}

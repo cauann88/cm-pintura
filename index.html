@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src=""></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CM PINTURAS</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="Logo1.png" alt="" id="logo">
+            </div>
+            <ul class="links">
+                <li><a href="hero">Início</a></li>
+                <li><a href="sobre">Quem somos?</a></li>
+                <li><a href="serviços">Serviços</a></li>
+                <li><a href="contato">Contato</a></li>
+            </ul>
+            <a href="#" class="action_btn">log-in</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="intro">
+            <h3>Quem somos?</h3>
+            <p>Na <strong>CM pinturas</strong>, nos orgulhamos de ser uma referência no setor de pinturas e acabamentos, oferecendo serviços de alta qualidade para residência, empresas e indústria. Com anos de experiência no mercado, nossa equipe de profissionais altamente qualificados se dedica a transformar ambientes com precisão e atenção aos detalhes. Nosso compromisso com a excelência, pontualidade e satisfação do cliente é o que nos distinguem. Seja renovando um espaço ou iniciando um novo projeto, na <strong>CM PINTURAS</strong>, garantimos um resultado impecável que supera expectativas. Vwnha conhecer a nossa paixão pela cor e a dedicação à qualidade</p>
+        </div>
+        <br>
+        <div id="services">
+            <h3>Serviços da CM PINTURAS</h3>
+            <p id="para">1. <strong>Pintura Residencial:</strong><br>
+                - Pintura interna e externa de casas e apartamentos <br>
+                - Preparação de superfícies, incluindo reparo de rachaduras e imperfeições. <br>
+                - Aplicação de diferentes tipos de tintas e acabamentos, conforme preferência do cliente. <br>
+            </p>
+             <br>
+            <p id="para">2. <strong>Pintura Comercial:</strong> <br>
+                - Pintura de escritórios, lojas, restaurantes e outros estabelecimentos comerciais. <br>
+                - Trabalhos realizados fora do horário comercial para minimizar interrupções nas atividades do cliente. <br>
+                - Personalização de cores e design para alinhar com a identidade visual da empresa. <br>
+            </p>
+            <br>
+            <p id="para">
+             3. <strong>Pintura Industrial:</strong> <br>
+                - Pintura de instalações industriais, incluindo fábricas e armazéns. <br>
+                - Utilização de tintas e revestimentos especiais para ambientes industriais. <br>
+                - Serviços de manutenção e repintura para prolongar a vida útil das instalações. <br>
+            </p>
+            <br>
+            <p id="para">
+             4.  <strong>Pintura Decorativa:</strong> <br>
+                - Técnicas de pintura decorativa, como texturização, marmorização e efeitos especiais. <br>
+                - Personalização de murais e pinturas artísticas para residências e empresas. <br>
+                - Consultoria de cores e design para criar ambientes únicos e acolhedores. <br>
+            </p>
+            <br>
+            <p id="para">
+             5. <strong>Impermeabilização:</strong> <br>
+                - Aplicação de produtos impermeabilizantes em superfícies internas e externas. <br>
+                - Soluções para evitar infiltrações e garantir a durabilidade da pintura. <br>
+                - Tratamento de áreas suscetíveis a umidade, como banheiros e cozinhas. <br>
+            </p>
+            <br>
+            <p id="para">
+             6. <strong>Preparação de Superfícies:</strong> <br>
+             <br>
+                - Limpeza e lixamento de paredes para garantir uma aplicação uniforme da tinta.
+                <br>
+                - Aplicação de primers e seladores para melhorar a aderência e durabilidade da pintura. 
+                <br>
+                - Reparo de gesso, drywall e alvenaria para superfícies lisas e perfeitas.
+            </p>
+            <br>
+            <p id="para"> 
+             7. <strong>Consultoria de Cores:</strong> <br>
+                - Assessoria profissional para a escolha das cores ideais para cada ambiente. <br>
+                - Criação de paletas de cores personalizadas para harmonizar com a decoração existente. <br>
+                - Apresentação de amostras e simulações para ajudar na decisão final. <br>
+            </p>
+            <br>
+            <p id="para">
+             8. <strong>Reparos e Manutenção:</strong><br>
+                - Serviços de retoque e repintura para manter a aparência nova e fresca das paredes. <br>
+                - Inspeção regular e manutenção preventiva para evitar problemas futuros. <br>
+                - Contratos de manutenção para empresas e condomínios.</p> <br>
+        </div>
+        <br>
+        <div class="teste">
+            <h3>Teste de cor</h3>
+            <section>
+                <img id="cor" src="casa.png" alt="">
+            </section>
+                <div id="butoes">
+                    <button id="ama" onclick="but1()">Amarelo</button>
+                    <button id="azul" onclick="but2()">Azul</button>
+                    <button id="are" onclick="but3()">Areia</button>
+                    <button id="ver" onclick="but4()">Verde</button>
+                    <button id="bg" onclick="but5()">Branco Gelo</button>
+                    <button id="lar" onclick="but6()">Laranja</button>
+                    <button id="pd" onclick="but7()">Padrão</button>
+                </div>
+        </div>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        function but1() {
+            document.getElementById('cor').style.backgroundColor = "yellow"
+        }
+        function but2() {
+            document.getElementById('cor').style.backgroundColor = "blue"
+        }
+        function but3() {
+            document.getElementById('cor').style.backgroundColor = "#e1d2c3"
+        }
+        function but4() {
+            document.getElementById('cor').style.backgroundColor = "#228b22"
+        }
+        function but5() {
+            document.getElementById('cor').style.backgroundColor = "#fffafa"
+        }
+        function but6() {
+            document.getElementById('cor').style.backgroundColor = "orange"
+        }
+        function but7() {
+            document.getElementById('cor').style.backgroundColor = "white"
+        }
+    </script>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>CM pinturas</h1>
+                <p>Sua vida mais colorida</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Produtos</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Técnologia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Informações</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Inscrever</h3>
+                <p>
+                    Digite seu e-mail para resolução de problemas
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyrigth">
+            &#169
+            2024 all rights reserveds
+        </div>
+    </footer>
+</body>
+</html>
